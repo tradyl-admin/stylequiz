@@ -24,55 +24,81 @@
   .divider { display: flex; align-items: center; gap: 8px; margin: 1.25rem 0; }
   .divider-line { flex: 1; height: 0.5px; background: #c9a96b; opacity: 0.4; }
   .divider-diamond { width: 5px; height: 5px; background: #c9a96b; transform: rotate(45deg); opacity: 0.7; }
-  .label { font-size: 10px; letter-spacing: 0.22em; color: #c9a96b; text-transform: uppercase; font-family: system-ui, sans-serif; }
+  .label { font-size: 11px; letter-spacing: 0.22em; color: #c9a96b; text-transform: uppercase; font-family: system-ui, sans-serif; }
   .progress-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
-  .progress-label { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #747474; font-family: system-ui, sans-serif; }
-  .progress-track { height: 1.5px; background: #e0dbd3; margin-bottom: 2rem; overflow: hidden; }
+  .progress-label { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #747474; font-family: system-ui, sans-serif; }
+  .progress-track { height: 2px; background: #e0dbd3; margin-bottom: 2rem; overflow: hidden; border-radius: 2px; }
   .progress-fill { height: 100%; background: #c9a96b; transition: width 0.35s ease; }
-  .question-text { font-size: 19px; font-weight: normal; line-height: 1.65; margin: 1rem 0 1.5rem; color: #333333; font-family: 'Belleza', serif; }
-  .options { display: flex; flex-direction: column; gap: 9px; margin-bottom: 1.75rem; }
-  .option { padding: 12px 16px; border: 1px solid #d4cfc8; background: #fff; cursor: pointer; font-size: 13px; line-height: 1.5; color: #747474; display: flex; align-items: center; gap: 12px; border-radius: 2px; font-family: 'Belleza', serif; transition: all 0.15s; }
+  .question-text { font-size: 22px; font-weight: normal; line-height: 1.65; margin: 1rem 0 1.5rem; color: #333333; font-family: 'Belleza', serif; }
+  .options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 1.75rem; }
+  .option { padding: 15px 18px; border: 1px solid #d4cfc8; background: #fff; cursor: pointer; font-size: 16px; line-height: 1.5; color: #747474; display: flex; align-items: center; gap: 14px; border-radius: 2px; font-family: 'Belleza', serif; transition: all 0.15s; -webkit-tap-highlight-color: transparent; }
   .option:hover { border-color: #333333; }
+  .option:active { transform: scale(0.99); }
   .option.selected { border: 1.5px solid #333333; background: #333333; color: #f9f5f0; }
-  .option-indicator { width: 14px; height: 14px; flex-shrink: 0; border: 1px solid #c5bfb8; background: transparent; transform: rotate(45deg); display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
+  .option-indicator { width: 16px; height: 16px; flex-shrink: 0; border: 1px solid #c5bfb8; background: transparent; transform: rotate(45deg); display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
   .option.selected .option-indicator { border: 2px solid #f9f5f0; background: #f9f5f0; }
-  .option-dot { width: 5px; height: 5px; background: #333333; display: none; }
+  .option-dot { width: 6px; height: 6px; background: #333333; display: none; }
   .option.selected .option-dot { display: block; }
-  .btn-primary { background: #333333; color: #f9f5f0; border: none; padding: 13px 40px; font-size: 11px; font-family: system-ui, sans-serif; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; border-radius: 2px; transition: opacity 0.2s; }
+  .btn-primary { background: #333333; color: #f9f5f0; border: none; padding: 15px 40px; font-size: 13px; font-family: system-ui, sans-serif; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; border-radius: 2px; transition: opacity 0.2s; width: 100%; }
   .btn-primary:disabled { opacity: 0.35; cursor: not-allowed; }
   .btn-primary:hover:not(:disabled) { opacity: 0.85; }
-  .btn-ghost { background: transparent; color: #333333; border: 1px solid #333333; padding: 10px 28px; font-size: 11px; font-family: system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; border-radius: 2px; transition: opacity 0.2s; }
+  .btn-ghost { background: transparent; color: #333333; border: 1px solid #333333; padding: 13px 28px; font-size: 12px; font-family: system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; border-radius: 2px; transition: opacity 0.2s; }
   .btn-ghost:hover { opacity: 0.7; }
-  .btn-whatsapp { background: #25D366; color: #fff; border: none; padding: 10px 18px; font-size: 11px; font-family: system-ui, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; border-radius: 2px; }
-  .btn-facebook { background: #1877F2; color: #fff; border: none; padding: 10px 18px; font-size: 11px; font-family: system-ui, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; border-radius: 2px; }
-  .btn-gold { background: #c9a96b; color: #fff; border: none; padding: 10px 18px; font-size: 11px; font-family: system-ui, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; border-radius: 2px; min-width: 140px; }
-  .btn-copy { background: transparent; color: #333333; border: 1px solid #333333; padding: 10px 18px; font-size: 11px; font-family: system-ui, sans-serif; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; border-radius: 2px; min-width: 110px; }
-  .intro-title { font-size: 28px; font-weight: normal; margin: 0 0 2px; color: #333333; font-family: 'Belleza', serif; line-height: 1.25; text-align: center; }
-  .intro-title-charm { font-size: 30px; font-family: 'Charm', cursive; color: #333333; text-align: center; margin: 0 0 1.25rem; line-height: 1.3; }
-  .intro-body { font-size: 14px; line-height: 1.9; color: #747474; font-family: 'Belleza', serif; margin: 1rem 0 1.75rem; text-align: center; }
+  .btn-whatsapp { background: #25D366; color: #fff; border: none; padding: 12px 18px; font-size: 12px; font-family: system-ui, sans-serif; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border-radius: 2px; }
+  .btn-facebook { background: #1877F2; color: #fff; border: none; padding: 12px 18px; font-size: 12px; font-family: system-ui, sans-serif; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border-radius: 2px; }
+  .btn-gold { background: #c9a96b; color: #fff; border: none; padding: 12px 18px; font-size: 12px; font-family: system-ui, sans-serif; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border-radius: 2px; }
+  .btn-copy { background: transparent; color: #333333; border: 1px solid #333333; padding: 12px 18px; font-size: 12px; font-family: system-ui, sans-serif; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; border-radius: 2px; }
+  .intro-title { font-size: 32px; font-weight: normal; margin: 0 0 2px; color: #333333; font-family: 'Belleza', serif; line-height: 1.25; text-align: center; }
+  .intro-title-charm { font-size: 34px; font-family: 'Charm', cursive; color: #333333; text-align: center; margin: 0 0 1.25rem; line-height: 1.3; }
+  .intro-body { font-size: 16px; line-height: 1.9; color: #747474; font-family: 'Belleza', serif; margin: 1rem 0 1.75rem; text-align: center; }
   .pills { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 2rem; }
-  .pill { font-size: 10px; font-family: system-ui, sans-serif; color: #747474; border: 1px solid #d4cfc8; border-radius: 2px; padding: 4px 14px; letter-spacing: 0.06em; }
-  .result-icon { width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 22px; margin: 0 auto 1rem; }
+  .pill { font-size: 12px; font-family: system-ui, sans-serif; color: #747474; border: 1px solid #d4cfc8; border-radius: 2px; padding: 5px 14px; letter-spacing: 0.06em; }
+  .result-icon { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; margin: 0 auto 1rem; }
+  .result-name { font-size: 28px; font-weight: normal; margin: 0 0 4px; font-family: 'Belleza', serif; color: #333; text-align: center; }
+  .result-tagline { font-size: 13px; letter-spacing: 0.1em; font-family: system-ui, sans-serif; text-align: center; }
+  .result-description { font-size: 15px; line-height: 1.9; color: #747474; font-family: 'Belleza', serif; margin: 0 0 1.25rem; padding-left: 1rem; border-left-width: 2px; border-left-style: solid; border-radius: 0; }
   .result-mantra { background: #333333; border-radius: 2px; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; text-align: center; }
-  .result-mantra-label { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #c9a96b; font-family: system-ui, sans-serif; margin-bottom: 10px; }
-  .result-mantra-text { font-size: 18px; font-family: 'Charm', cursive; color: #f9f5f0; line-height: 1.5; }
+  .result-mantra-label { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: #c9a96b; font-family: system-ui, sans-serif; margin-bottom: 10px; }
+  .result-mantra-text { font-size: 20px; font-family: 'Charm', cursive; color: #f9f5f0; line-height: 1.5; }
+  .collections-heading { font-size: 15px; font-family: 'Belleza', serif; color: #333; text-align: center; line-height: 1.7; margin-bottom: 1.25rem; }
   .collections-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 1.5rem; }
   .collection-card { border: 1px solid #d4cfc8; border-radius: 2px; overflow: hidden; background: #fff; display: flex; flex-direction: column; }
   .collection-img-wrap { width: 100%; aspect-ratio: 3/4; overflow: hidden; background: #e0dbd3; display: flex; align-items: center; justify-content: center; }
   .collection-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease; }
   .collection-card:hover .collection-img-wrap img { transform: scale(1.04); }
-  .collection-card-body { padding: 10px 10px 12px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
-  .collection-name { font-size: 12px; font-family: 'Belleza', serif; color: #333333; line-height: 1.4; margin: 0; }
-  .collection-cta { display: block; text-align: center; background: #333333; color: #f9f5f0; text-decoration: none; font-size: 9px; font-family: system-ui, sans-serif; letter-spacing: 0.16em; text-transform: uppercase; padding: 8px 6px; border-radius: 2px; margin-top: auto; }
   .img-placeholder { width: 20px; height: 20px; background: #c9a96b; transform: rotate(45deg); opacity: 0.4; }
+  .collection-card-body { padding: 10px 10px 12px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+  .collection-name { font-size: 13px; font-family: 'Belleza', serif; color: #333333; line-height: 1.4; margin: 0; }
+  .collection-cta { display: block; text-align: center; background: #333333; color: #f9f5f0; text-decoration: none; font-size: 10px; font-family: system-ui, sans-serif; letter-spacing: 0.16em; text-transform: uppercase; padding: 9px 6px; border-radius: 2px; margin-top: auto; }
   .share-section { text-align: center; margin-bottom: 1.5rem; }
   .share-buttons { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 0.75rem; }
-  .share-hint { font-size: 11px; font-family: system-ui, sans-serif; color: #747474; opacity: 0.7; margin-top: 0.5rem; }
+  .share-hint { font-size: 12px; font-family: system-ui, sans-serif; color: #747474; opacity: 0.7; margin-top: 0.5rem; }
   .result-card-preview { width: 100%; max-width: 320px; margin: 0 auto 1.25rem; border: 2px solid #c9a96b; padding: 20px 16px; text-align: center; position: relative; }
-  @media (max-width: 480px) {
-    #survey-root { padding: 1.5rem 1rem 3rem; }
+  .auto-advance-bar { height: 2px; background: #c9a96b; width: 0%; transition: width 0.28s linear; margin-top: 12px; border-radius: 2px; }
+
+  @media (max-width: 600px) {
+    #survey-root { padding: 1.75rem 1.25rem 3rem; }
     .frame { padding: 2rem 1.25rem; }
-    .intro-title, .intro-title-charm { font-size: 24px; }
+    .intro-title { font-size: 26px; }
+    .intro-title-charm { font-size: 28px; }
+    .intro-body { font-size: 15px; }
+    .question-text { font-size: 19px; }
+    .option { font-size: 15px; padding: 14px 14px; }
+    .result-name { font-size: 24px; }
+    .result-description { font-size: 14px; }
+    .result-mantra-text { font-size: 18px; }
+    .collections-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .collection-name { font-size: 12px; }
+    .share-buttons { gap: 8px; }
+    .btn-whatsapp, .btn-facebook, .btn-gold, .btn-copy { padding: 11px 12px; font-size: 11px; }
+    .btn-primary { font-size: 12px; padding: 14px 24px; }
+  }
+
+  @media (max-width: 380px) {
+    .intro-title { font-size: 22px; }
+    .intro-title-charm { font-size: 24px; }
+    .question-text { font-size: 17px; }
+    .option { font-size: 14px; }
     .collections-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
 </style>
@@ -112,7 +138,8 @@
     <div class="dots" id="dots-quiz"></div>
     <p class="question-text" id="question-text"></p>
     <div class="options" id="options-list"></div>
-    <button class="btn-primary" id="btn-next" onclick="handleNext()" disabled>Next question</button>
+    <button class="btn-primary" id="btn-next" onclick="handleNext()" disabled style="display:none;">See my result</button>
+    <div class="auto-advance-bar" id="auto-advance-bar"></div>
   </div>
 
   <!-- RESULT -->
@@ -123,30 +150,30 @@
       <div style="text-align:center;margin-bottom:1.25rem;padding-top:4px;">
         <div class="label" style="display:block;margin-bottom:1rem;">your style statement</div>
         <div class="result-icon" id="result-icon"></div>
-        <h2 style="font-size:26px;font-weight:normal;margin:0 0 4px;font-family:'Belleza',serif;color:#333;" id="result-name"></h2>
-        <div style="font-size:12px;letter-spacing:0.1em;font-family:system-ui,sans-serif;" id="result-tagline"></div>
+        <h2 class="result-name" id="result-name"></h2>
+        <div class="result-tagline" id="result-tagline"></div>
       </div>
       <div class="divider"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
-      <p style="font-size:14px;line-height:1.9;color:#747474;font-family:'Belleza',serif;margin:0 0 1.25rem;padding-left:1rem;border-left-width:2px;border-left-style:solid;border-radius:0;" id="result-description"></p>
+      <p class="result-description" id="result-description"></p>
       <div style="border-radius:2px;padding:1rem 1.25rem;margin-bottom:1rem;" id="result-pieces-wrap">
-        <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;font-family:system-ui,sans-serif;margin-bottom:8px;" id="result-pieces-label">Signature pieces</div>
-        <div style="font-size:13px;line-height:1.9;font-family:'Belleza',serif;color:#333;" id="result-pieces-text"></div>
+        <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;font-family:system-ui,sans-serif;margin-bottom:8px;" id="result-pieces-label">Signature pieces</div>
+        <div style="font-size:14px;line-height:1.9;font-family:'Belleza',serif;color:#333;" id="result-pieces-text"></div>
       </div>
       <div class="result-mantra">
         <div class="result-mantra-label">Your style mantra</div>
         <div class="result-mantra-text" id="result-mantra-text"></div>
       </div>
       <div class="divider"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
-      <p style="font-size:14px;font-family:'Belleza',serif;color:#333;text-align:center;line-height:1.7;margin-bottom:1.25rem;">Here are top 3 Desiqlo recommendations for your personal style:</p>
+      <p class="collections-heading">Here are top 3 Desiqlo recommendations for your personal style:</p>
       <div class="collections-grid" id="collections-grid"></div>
       <div class="divider"><div class="divider-line"></div><div class="divider-diamond"></div><div class="divider-line"></div></div>
       <div class="share-section">
         <div class="label" style="display:block;margin-bottom:0.6rem;">Share your style</div>
-        <p style="font-size:13px;font-family:'Belleza',serif;color:#747474;margin-bottom:1.25rem;line-height:1.7;">Save your result card and share it — or send the quiz link directly.</p>
+        <p style="font-size:14px;font-family:'Belleza',serif;color:#747474;margin-bottom:1.25rem;line-height:1.7;">Save your result card and share it — or send the quiz link directly.</p>
         <div id="result-card-preview" class="result-card-preview"></div>
         <div class="share-buttons">
           <button class="btn-gold" id="btn-download" onclick="downloadCard()">Save result card</button>
-          <button class="btn-whatsapp" id="btn-whatsapp" onclick="shareWhatsapp()">WhatsApp</button>
+          <button class="btn-whatsapp" onclick="shareWhatsapp()">WhatsApp</button>
           <button class="btn-facebook" onclick="shareFacebook()">Facebook</button>
           <button class="btn-copy" id="btn-copy" onclick="copyLink()">Copy link</button>
         </div>
@@ -204,76 +231,133 @@ const scoringMap = [
   ["culturalWeaver","minimalist","trendsetter","consciousCreator","shapeShifter"],
 ];
 
-let current = 0, answers = [], selected = null, currentPersona = null;
+let current=0, answers=[], selected=null, currentPersona=null, advancing=false;
 
 function makeDots(elId, color) {
   const el = document.getElementById(elId);
   if (!el) return;
-  el.innerHTML = '';
-  for (let i = 0; i < 9; i++) {
-    const d = document.createElement('div');
-    d.className = 'dot';
-    const size = i%2===0 ? 4 : 3;
-    d.style.cssText = `width:${size}px;height:${size}px;background:${color||C.gold};border-radius:${i%3===0?'50%':'0'};transform:${i%3===0?'none':'rotate(45deg)'};`;
+  el.innerHTML='';
+  for(let i=0;i<9;i++){
+    const d=document.createElement('div');
+    d.className='dot';
+    const s=i%2===0?4:3;
+    d.style.cssText=`width:${s}px;height:${s}px;background:${color||C.gold};border-radius:${i%3===0?'50%':'0'};transform:${i%3===0?'none':'rotate(45deg)'};`;
     el.appendChild(d);
   }
 }
 
 function showScreen(id) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
   document.getElementById('screen-'+id).classList.add('active');
 }
 
 function renderQuestion() {
-  const q = questions[current];
-  const pct = Math.round((current/questions.length)*100);
-  document.getElementById('q-counter').textContent = `Question ${current+1} of ${questions.length}`;
-  document.getElementById('q-pct').textContent = pct+'%';
-  document.getElementById('progress-fill').style.width = pct+'%';
-  document.getElementById('question-text').textContent = q.text;
-  const list = document.getElementById('options-list');
-  list.innerHTML = '';
-  q.options.forEach((opt,i) => {
-    const div = document.createElement('div');
-    div.className = 'option'+(selected===i?' selected':'');
-    div.innerHTML = `<div class="option-indicator"><div class="option-dot"></div></div><span>${opt}</span>`;
-    div.onclick = () => selectOption(i);
+  const q=questions[current];
+  const pct=Math.round((current/questions.length)*100);
+  const isLast=current+1===questions.length;
+  document.getElementById('q-counter').textContent=`Question ${current+1} of ${questions.length}`;
+  document.getElementById('q-pct').textContent=pct+'%';
+  document.getElementById('progress-fill').style.width=pct+'%';
+  document.getElementById('question-text').textContent=q.text;
+  const list=document.getElementById('options-list');
+  list.innerHTML='';
+  q.options.forEach((opt,i)=>{
+    const div=document.createElement('div');
+    div.className='option'+(selected===i?' selected':'');
+    div.innerHTML=`<div class="option-indicator"><div class="option-dot"></div></div><span>${opt}</span>`;
+    div.onclick=()=>selectOption(i);
     list.appendChild(div);
   });
-  const btn = document.getElementById('btn-next');
-  btn.disabled = selected===null;
-  btn.textContent = current+1===questions.length ? 'See my result' : 'Next question';
-  makeDots('dots-quiz', C.gold);
+  const btn=document.getElementById('btn-next');
+  const bar=document.getElementById('auto-advance-bar');
+  if(isLast){
+    btn.style.display='block';
+    btn.disabled=selected===null;
+    btn.textContent='See my result';
+    bar.style.display='none';
+  } else {
+    btn.style.display='none';
+    bar.style.width='0%';
+    bar.style.display='block';
+  }
+  makeDots('dots-quiz',C.gold);
 }
 
-function selectOption(i) { selected=i; renderQuestion(); }
+function selectOption(i) {
+  if(advancing) return;
+  selected=i;
+  const isLast=current+1===questions.length;
+  renderQuestion();
+  if(!isLast) {
+    advancing=true;
+    const bar=document.getElementById('auto-advance-bar');
+    bar.style.width='0%';
+    setTimeout(()=>{ bar.style.width='100%'; },10);
+    setTimeout(()=>{ handleNext(); },300);
+  }
+}
 
 function handleNext() {
-  if (selected===null) return;
+  if(selected===null) return;
   answers.push(selected);
-  if (current+1===questions.length) { showResult(); }
+  advancing=false;
+  if(current+1===questions.length){ showResult(); }
   else { current++; selected=null; renderQuestion(); }
 }
 
 function computeResult() {
-  const scores = {};
-  answers.forEach((ans,qi) => { const p=scoringMap[qi][ans]; scores[p]=(scores[p]||0)+1; });
+  const scores={};
+  answers.forEach((ans,qi)=>{ const p=scoringMap[qi][ans]; scores[p]=(scores[p]||0)+1; });
   return Object.entries(scores).sort((a,b)=>b[1]-a[1])[0][0];
 }
 
+async function fetchCollectionImage(handle) {
+  try {
+    const res = await fetch(`https://desiqlo.com/collections/${handle}.json`);
+    const data = await res.json();
+    return data.collection && data.collection.image ? data.collection.image.src : null;
+  } catch(e) { return null; }
+}
+
+async function renderCollections(p) {
+  const grid=document.getElementById('collections-grid');
+  grid.style.gridTemplateColumns=`repeat(${p.collections.length},minmax(0,1fr))`;
+  grid.innerHTML='';
+  for(const col of p.collections){
+    const handle=col.url.split('/collections/')[1];
+    const card=document.createElement('div');
+    card.className='collection-card';
+    card.innerHTML=`
+      <div class="collection-img-wrap" id="img-wrap-${handle}">
+        <div class="img-placeholder"></div>
+      </div>
+      <div class="collection-card-body">
+        <p class="collection-name">${col.name}</p>
+        <a class="collection-cta" href="${col.url}" target="_blank">Explore now</a>
+      </div>`;
+    grid.appendChild(card);
+    fetchCollectionImage(handle).then(src=>{
+      const wrap=document.getElementById(`img-wrap-${handle}`);
+      if(wrap && src){
+        wrap.innerHTML=`<img src="${src}" alt="${col.name}" onerror="this.parentElement.innerHTML='<div class=\\'img-placeholder\\'></div>'"/>`;
+      }
+    });
+  }
+}
+
 function buildSVG(p) {
-  const bg = p.accentLight===C.cream ? '#f9f5f0' : p.accentLight;
-  const mantra = `"${p.mantra}"`;
-  const words = mantra.split(' ');
-  let lines=[], line='';
-  words.forEach(w => {
-    if ((line+' '+w).trim().length>32 && line) { lines.push(line.trim()); line=w; }
+  const bg=p.accentLight===C.cream?'#f9f5f0':p.accentLight;
+  const mantra=`"${p.mantra}"`;
+  const words=mantra.split(' ');
+  let lines=[],line='';
+  words.forEach(w=>{
+    if((line+' '+w).trim().length>32&&line){lines.push(line.trim());line=w;}
     else line=(line+' '+w).trim();
   });
   lines.push(line);
-  const mantraBaseY = lines.length===1?780:lines.length===2?768:756;
-  const dots11 = (y) => Array.from({length:11}).map((_,i)=>{
-    const x=540-5*22+i*22; const r=i%2===0?4:2.5;
+  const mantraBaseY=lines.length===1?780:lines.length===2?768:756;
+  const dots11=(y)=>Array.from({length:11}).map((_,i)=>{
+    const x=540-5*22+i*22,r=i%2===0?4:2.5;
     return `<circle cx="${x}" cy="${y}" r="${r}" fill="${C.gold}" opacity="0.3"/>`;
   }).join('');
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
@@ -305,10 +389,10 @@ function buildSVG(p) {
 }
 
 function renderCardPreview(p) {
-  const el = document.getElementById('result-card-preview');
-  const bg = p.accentLight===C.cream ? '#f9f5f0' : p.accentLight;
-  el.style.background = bg;
-  el.innerHTML = `
+  const el=document.getElementById('result-card-preview');
+  const bg=p.accentLight===C.cream?'#f9f5f0':p.accentLight;
+  el.style.background=bg;
+  el.innerHTML=`
     <div style="font-size:9px;letter-spacing:0.2em;color:${C.gold};text-transform:uppercase;font-family:system-ui;margin-bottom:6px;">DESIQLO</div>
     <div style="height:0.5px;background:${C.gold};opacity:0.35;margin:0 20px 6px;"></div>
     <div style="font-size:7px;letter-spacing:0.16em;color:${C.gold};text-transform:uppercase;font-family:system-ui;margin-bottom:10px;">YOUR STYLE STATEMENT</div>
@@ -323,86 +407,69 @@ function renderCardPreview(p) {
 }
 
 function downloadCard() {
-  const btn = document.getElementById('btn-download');
-  btn.textContent = 'Creating...';
+  const btn=document.getElementById('btn-download');
+  btn.textContent='Creating...';
   try {
-    const svg = buildSVG(currentPersona);
-    const blob = new Blob([svg], {type:'image/svg+xml'});
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `desiqlo-${currentPersona.name.toLowerCase().replace(/\s+/g,'-')}.svg`;
+    const svg=buildSVG(currentPersona);
+    const blob=new Blob([svg],{type:'image/svg+xml'});
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a');
+    a.href=url;
+    a.download=`desiqlo-${currentPersona.name.toLowerCase().replace(/\s+/g,'-')}.svg`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-    btn.textContent = 'Downloaded!';
-    setTimeout(()=>btn.textContent='Save result card', 2500);
-  } catch(e) { btn.textContent='Save result card'; }
+    btn.textContent='Downloaded!';
+    setTimeout(()=>btn.textContent='Save result card',2500);
+  } catch(e){ btn.textContent='Save result card'; }
 }
 
 function shareWhatsapp() {
-  const msg = encodeURIComponent(`I'm a ${currentPersona.name} — what's your style statement? Take this Quiz to find out: ${QUIZ_URL}`);
-  window.open(`https://wa.me/?text=${msg}`, '_blank');
+  const msg=encodeURIComponent(`I'm a ${currentPersona.name} — what's your style statement? Take this Quiz to find out: ${QUIZ_URL}`);
+  window.open(`https://wa.me/?text=${msg}`,'_blank');
 }
 
 function shareFacebook() {
-  window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(QUIZ_URL)}`, '_blank');
+  window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(QUIZ_URL)}`,'_blank');
 }
 
 function copyLink() {
-  const btn = document.getElementById('btn-copy');
+  const btn=document.getElementById('btn-copy');
   navigator.clipboard.writeText(QUIZ_URL).then(()=>{
     btn.textContent='Copied!';
-    setTimeout(()=>btn.textContent='Copy link', 2000);
+    setTimeout(()=>btn.textContent='Copy link',2000);
   });
 }
 
 function showResult() {
-  const key = computeResult();
-  const p = personas[key];
-  currentPersona = p;
-  document.getElementById('result-icon').style.cssText = `background:${p.accentLight};border:1.5px solid ${p.accent};color:${p.accent};`;
-  document.getElementById('result-icon').textContent = p.symbol;
-  document.getElementById('result-name').textContent = p.name;
-  document.getElementById('result-tagline').style.color = p.accent;
-  document.getElementById('result-tagline').textContent = p.tagline;
-  document.getElementById('result-description').style.borderLeftColor = p.accent;
-  document.getElementById('result-description').textContent = p.description;
-  document.getElementById('result-pieces-wrap').style.cssText = `background:${p.accentLight};border:1px solid ${p.accent};border-radius:2px;padding:1rem 1.25rem;margin-bottom:1rem;`;
-  document.getElementById('result-pieces-label').style.color = p.accent;
-  document.getElementById('result-pieces-text').textContent = p.pieces;
-  document.getElementById('result-mantra-text').textContent = `"${p.mantra}"`;
-  const grid = document.getElementById('collections-grid');
-  grid.style.gridTemplateColumns = `repeat(${p.collections.length},minmax(0,1fr))`;
-  grid.innerHTML = '';
-  p.collections.forEach(col => {
-    const handle = col.url.split('/collections/')[1];
-    const card = document.createElement('div');
-    card.className = 'collection-card';
-    card.innerHTML = `
-      <div class="collection-img-wrap">
-        <img src="https://desiqlo.com/collections/${handle}/image" alt="${col.name}"
-          onerror="this.parentElement.innerHTML='<div class=\\'img-placeholder\\'></div>'"/>
-      </div>
-      <div class="collection-card-body">
-        <p class="collection-name">${col.name}</p>
-        <a class="collection-cta" href="${col.url}" target="_blank">Explore now</a>
-      </div>`;
-    grid.appendChild(card);
-  });
+  const key=computeResult();
+  const p=personas[key];
+  currentPersona=p;
+  document.getElementById('result-icon').style.cssText=`background:${p.accentLight};border:1.5px solid ${p.accent};color:${p.accent};`;
+  document.getElementById('result-icon').textContent=p.symbol;
+  document.getElementById('result-name').textContent=p.name;
+  document.getElementById('result-tagline').style.color=p.accent;
+  document.getElementById('result-tagline').textContent=p.tagline;
+  document.getElementById('result-description').style.borderLeftColor=p.accent;
+  document.getElementById('result-description').textContent=p.description;
+  document.getElementById('result-pieces-wrap').style.cssText=`background:${p.accentLight};border:1px solid ${p.accent};border-radius:2px;padding:1rem 1.25rem;margin-bottom:1rem;`;
+  document.getElementById('result-pieces-label').style.color=p.accent;
+  document.getElementById('result-pieces-text').textContent=p.pieces;
+  document.getElementById('result-mantra-text').textContent=`"${p.mantra}"`;
+  renderCollections(p);
   renderCardPreview(p);
-  makeDots('dots-result', p.accent);
-  makeDots('dots-result-b', p.accent);
+  makeDots('dots-result',p.accent);
+  makeDots('dots-result-b',p.accent);
   showScreen('result');
-  window.scrollTo({top:0, behavior:'smooth'});
+  window.scrollTo({top:0,behavior:'smooth'});
 }
 
-function startQuiz() { showScreen('quiz'); renderQuestion(); window.scrollTo({top:0,behavior:'smooth'}); }
-function restart() { current=0; answers=[]; selected=null; currentPersona=null; showScreen('intro'); window.scrollTo({top:0,behavior:'smooth'}); }
+function startQuiz(){ showScreen('quiz'); renderQuestion(); window.scrollTo({top:0,behavior:'smooth'}); }
+function restart(){ current=0;answers=[];selected=null;currentPersona=null;advancing=false;showScreen('intro');window.scrollTo({top:0,behavior:'smooth'}); }
 
-makeDots('dots-intro', C.gold);
-makeDots('dots-intro-b', C.gold);
+makeDots('dots-intro',C.gold);
+makeDots('dots-intro-b',C.gold);
 </script>
 </body>
 </html>
