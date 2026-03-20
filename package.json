@@ -1,0 +1,15 @@
+{
+  "name": "desiqlo-style-quiz",
+  "version": "1.0.0",
+  "description": "Desiqlo Personal Style Quiz",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
