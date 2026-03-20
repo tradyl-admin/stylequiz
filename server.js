@@ -1,11 +1,18 @@
 const express = require("express");
 const path = require("path");
+const fs = require("fs");
 const app = express();
 
-app.use(express.static(path.join(__dirname, "public")));
+const publicPath = path.join(__dirname, "public");
+app.use(express.static(publicPath));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  const filePath = path.join(publicPath, "index.html");
+  if (fs.existsSync(filePath)) {
+    res.sendFile(filePath);
+  } else {
+    res.status(500).send(`File not found at: ${filePath}. Dir contents: ${fs.readdirSync(__dirname).join(", ")}`);
+  }
 });
 
 const PORT = process.env.PORT || 3000;
